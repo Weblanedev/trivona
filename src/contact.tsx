@@ -164,7 +164,7 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Call Us
               </h4>
-              <p className="text-primary leading-[16px]">+234-908-353-6937</p>
+              <p className="text-primary leading-[16px]">+234-909-636-2217</p>
             </div>
           </div>
           <div className="flex gap-5 items-start justify-center">
@@ -173,7 +173,9 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Mail Us
               </h4>
-              <p className="text-primary leading-[16px]">support@trivona.ng</p>
+              <p className="text-primary leading-[16px]">
+                operations@trivonaltd.com
+              </p>
             </div>
           </div>
           <div className="flex gap-5 items-start justify-center">
@@ -183,7 +185,7 @@ const Contact = () => {
                 Address
               </h4>
               <p className="text-primary leading-normal">
-                4, Fred Omojole Street, Gbagada, Lagos State, Nigeria
+                8 James Street, Oko Obi, Logun, Igbo Olomu, Lagos State
               </p>
             </div>
           </div>
