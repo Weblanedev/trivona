@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
           to="/products"
           className="text-base font-medium text-[#333] bg-white rounded-full px-7 md:px-12 py-4 md:py-5 hover:bg-gray-200 flex items-center justify-center gap-3 max-w-max"
         >
-          Explore Products
+          Explore Books
         </Link>
       </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
           to="/products"
           className="text-[14px] leading-[24px] font-medium text-white cursor-pointer"
         >
-          Products
+          Books
         </Link>
         <Link
           to="/contact-us"
@@ -44,10 +44,16 @@ const Footer = () => {
           Contact
         </Link>
         <Link
-          to="/"
-          className="text-[14px] leading-[24px] font-medium text-white cursor-pointer"
+          to="/privacy-policy"
+          className="text-[14px] leading-[24px] font-medium text-white cursor-pointer hover:underline"
         >
-          Terms & Privacy
+          Privacy Policy
+        </Link>
+        <Link
+          to="/refund-return"
+          className="text-[14px] leading-[24px] font-medium text-white cursor-pointer hover:underline"
+        >
+          Refund & Return
         </Link>
       </div>
 

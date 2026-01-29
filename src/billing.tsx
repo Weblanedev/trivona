@@ -2,9 +2,13 @@ import { MouseEventHandler, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useModals } from "./useModal";
 import ShowOrderModal from "./show-order";
-import { Book } from "./utils";
+/** Legacy billing page type (checkout flow uses CheckoutPage now). */
+interface BillingBook {
+  title: string;
+  price: string;
+}
 
-const Billing = ({ selectedBook }: { selectedBook: Book }) => {
+const Billing = ({ selectedBook }: { selectedBook: BillingBook }) => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -51,7 +55,7 @@ const Billing = ({ selectedBook }: { selectedBook: Book }) => {
 
   // Event handlers to update form field values and check validity
   const handleCardHolderNameChange = (
-    e: React.ChangeEvent<HTMLInputElement>
+    e: React.ChangeEvent<HTMLInputElement>,
   ) => {
     setCardHolderName(e.target.value);
   };
@@ -167,17 +171,13 @@ const Billing = ({ selectedBook }: { selectedBook: Book }) => {
               <h4 className="text-[#707070] uppercase font-medium text-[13px]">
                 Professional consultation service charge
               </h4>
-              <h4 className="text-[#161616] font-medium text-[16px]">
-                $20.00
-              </h4>
+              <h4 className="text-[#161616] font-medium text-[16px]">$20.00</h4>
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
               <h4 className="text-[#707070] uppercase font-medium text-[13px]">
                 Processing Fee
               </h4>
-              <h4 className="text-[#161616] font-medium text-[16px]">
-                $5.00
-              </h4>
+              <h4 className="text-[#161616] font-medium text-[16px]">$5.00</h4>
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
               <h4 className="text-[#707070] font-medium text-[13px]">TOTAL</h4>

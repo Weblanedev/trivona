@@ -10,149 +10,207 @@ const PrivacyPolicy = () => {
   }, []);
 
   return (
-    <div className="w-full h-full flex flex-col pt-[66px] md:pt-[80px]">
-      <section className="relative h-[250px] md:h-[300px]">
-        <div className="flex flex-col gap-2 items-center justify-center h-full w-full">
-          <h1 className="font-medium md:font-semibold text-[50px] sm:text-[40px] md:text-[50px] md:text-left leading-snug md:leading-[62px] text-center text-blue-950">
-            Terms of Use & Privacy Policy
-          </h1>
+    <div className="w-full min-h-screen flex flex-col pt-[66px] md:pt-[80px] bg-white">
+      <div className="max-w-4xl mx-auto w-full px-4 md:px-10 py-12">
+        <h1 className="text-4xl font-bold text-primary mb-8 text-center">
+          Privacy Policy
+        </h1>
+
+        <div className="prose prose-lg max-w-none">
+          {/* <p className="text-gray-600 mb-6">
+            <strong>Last Updated:</strong> {new Date().toLocaleDateString()}
+          </p> */}
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
+              1. Introduction
+            </h2>
+            <p className="text-gray-700 mb-4">
+              Welcome to Trivona Limited ("we," "our," or "us"). We are
+              committed to protecting your privacy and ensuring you have a
+              positive experience on our website and in using our products and
+              services. This Privacy Policy explains how we collect, use,
+              disclose, and safeguard your information when you visit our
+              website and purchase our products.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
+              2. Information We Collect
+            </h2>
+            <h3 className="text-xl font-semibold text-primary mb-3">
+              Personal Information
+            </h3>
+            <p className="text-gray-700 mb-4">
+              We collect personal information that you provide directly to us,
+              including:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>
+                Name and contact information (email address, phone number)
+              </li>
+              <li>Shipping and billing addresses</li>
+              <li>
+                Payment information (processed securely through our payment
+                processors)
+              </li>
+              <li>Account credentials if you create an account</li>
+              <li>
+                Communications with us (customer service inquiries, feedback)
+              </li>
+            </ul>
+
+            <h3 className="text-xl font-semibold text-primary mb-3">
+              Automatically Collected Information
+            </h3>
+            <p className="text-gray-700 mb-4">
+              When you visit our website, we automatically collect certain
+              information, including:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>IP address and browser type</li>
+              <li>Device information and operating system</li>
+              <li>Pages visited and time spent on our website</li>
+              <li>Referring website addresses</li>
+              <li>Cookies and similar tracking technologies</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
+              3. How We Use Your Information
+            </h2>
+            <p className="text-gray-700 mb-4">
+              We use the information we collect to:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>Process and fulfill your orders</li>
+              <li>Send you order confirmations and shipping updates</li>
+              <li>Respond to your inquiries and provide customer support</li>
+              <li>Send you marketing communications (with your consent)</li>
+              <li>Improve our website and product offerings</li>
+              <li>Detect and prevent fraud and unauthorized access</li>
+              <li>Comply with legal obligations</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
+              4. Information Sharing and Disclosure
+            </h2>
+            <p className="text-gray-700 mb-4">
+              We do not sell your personal information. We may share your
+              information in the following circumstances:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>
+                <strong>Service Providers:</strong> We share information with
+                third-party service providers who perform services on our
+                behalf, such as payment processing, shipping, and email
+                delivery.
+              </li>
+              <li>
+                <strong>Legal Requirements:</strong> We may disclose information
+                if required by law or in response to valid requests by public
+                authorities.
+              </li>
+              <li>
+                <strong>Business Transfers:</strong> In the event of a merger,
+                acquisition, or sale of assets, your information may be
+                transferred.
+              </li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
+              5. Data Security
+            </h2>
+            <p className="text-gray-700 mb-4">
+              We implement appropriate technical and organizational security
+              measures to protect your personal information against unauthorized
+              access, alteration, disclosure, or destruction. However, no method
+              of transmission over the Internet or electronic storage is 100%
+              secure.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
+              6. Your Rights
+            </h2>
+            <p className="text-gray-700 mb-4">You have the right to:</p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>Access and receive a copy of your personal information</li>
+              <li>Correct inaccurate or incomplete information</li>
+              <li>Request deletion of your personal information</li>
+              <li>Opt-out of marketing communications</li>
+              <li>Withdraw consent where processing is based on consent</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
+              7. Cookies
+            </h2>
+            <p className="text-gray-700 mb-4">
+              We use cookies and similar tracking technologies to enhance your
+              experience on our website. You can control cookies through your
+              browser settings, but disabling cookies may affect website
+              functionality.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
+              8. Children's Privacy
+            </h2>
+            <p className="text-gray-700 mb-4">
+              Our website is not intended for children under the age of 18. We
+              do not knowingly collect personal information from children.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
+              9. Changes to This Privacy Policy
+            </h2>
+            <p className="text-gray-700 mb-4">
+              We may update this Privacy Policy from time to time. We will
+              notify you of any changes by posting the new Privacy Policy on
+              this page.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
+              10. Contact Us
+            </h2>
+            <p className="text-gray-700 mb-4">
+              If you have any questions about this Privacy Policy, please
+              contact us:
+            </p>
+            <ul className="list-none text-gray-700 space-y-2">
+              <li>
+                <strong>Email:</strong>{" "}
+                <a
+                  href="mailto:privacy@trivona.com"
+                  className="text-primary hover:underline"
+                >
+                  privacy@trivona.com
+                </a>
+              </li>
+              <li>
+                <strong>Phone:</strong> +234 800 000 0000
+              </li>
+              <li>
+                <strong>Address:</strong> Trivona Limited, Nigeria
+              </li>
+            </ul>
+          </section>
         </div>
-      </section>
-
-      <section className="relative p-10 md:px-[262px] md:py-[80px] flex flex-col gap-9 items-center w-full justify-center">
-        <div className="relative flex flex-col gap-8 items-center w-full justify-center">
-          <h2 className="font-mediium text-[30.68px] md:text-[40px] w-full leading-[45px] text-[#010910]">
-            Who we are{" "}
-          </h2>
-          <p className="text-[16px] text-black leading-[28.8px] font-normal mt-[10px] w-full">
-            We provide marketing services to startups and small businesses
-            looking for a partner for their digital media. We work with you, not
-            for you.We are lorem duoa headquartered in North-Eastern France,
-            with our 19 associates located across nine countries in order to
-            best serve a client base that stretches throughout North America.
-          </p>
-        </div>
-
-        <div className="relative flex flex-col gap-8 items-center w-full justify-center">
-          <h3 className="font-mediium text-[30.68px] md:text-[40px] w-full leading-[45px] text-[#010910]">
-            Comments{" "}
-          </h3>
-          <p className="text-[16px] text-black leading-[28.8px] font-normal w-full">
-            When visitors leave comments on the site we collect the data shown
-            in the comments form, and also the visitor’s IP address and browser
-            user agent string to help spam detection. An anonymized string
-            created from your email address (also called a hash) may be provided
-            to the Gravatar service to see if you are using it. The Gravatar
-            service privacy policy is available here:
-            https://surfnet.site/privacy-policy/. After approval of your
-            comment, your profile picture is visible to the public in the
-            context of your comment.
-          </p>
-        </div>
-
-        <div className="relative flex flex-col gap-8 items-center w-full justify-center">
-          <h3 className="font-mediium text-[30.68px] md:text-[40px] w-full leading-[45px] text-[#010910]">
-            Media{" "}
-          </h3>
-          <p className="text-[16px] text-black leading-[28.8px] font-normal w-full">
-            If you upload images to the website, you should avoid uploading
-            images with embedded location data (EXIF GPS) included. Visitors to
-            the website can download and extract any location data from images
-            on the website.
-          </p>
-
-          <ul className="text-[16px] text-black leading-[28.8px] font-normal w-full list-decimal pl-12 md:pl-20 mt-[-9px]">
-            <li>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us.
-            </li>
-            <li>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us.
-            </li>
-            <li>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us.
-            </li>
-            <li>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us.
-            </li>
-            <li>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us.
-            </li>
-          </ul>
-        </div>
-
-        <div className="relative flex flex-col gap-8 items-center w-full justify-center">
-          <h3 className="font-mediium text-[30.68px] md:text-[40px] w-full leading-[45px] text-[#010910]">
-            Cookies{" "}
-          </h3>
-          <p className="text-[16px] text-black leading-[28.8px] font-normal w-full">
-            If you leave a comment on our site you may opt-in to saving your
-            name, email address and website in cookies. These are for your
-            convenience so that you do not have to fill in your details again
-            when you leave another comment. These cookies will last for one
-            year. If you visit our login page, we will set a temporary cookie to
-            determine if your browser accepts cookies. This cookie contains no
-            personal data and is discarded when you close your browser. When you
-            log in, we will also set up several cookies to save your login
-            information and your screen display choices. Login cookies last for
-            two days, and screen options cookies last for a year. If you select
-            “Remember Me”, your login will persist for two weeks. If you log out
-            of your account, the login cookies will be removed. If you edit or
-            publish an article, an additional cookie will be saved in your
-            browser. This cookie includes no personal data and simply indicates
-            the post ID of the article you just edited. It expires after 1 day.
-          </p>
-        </div>
-
-        <div className="relative flex flex-col gap-8 items-center w-full justify-center">
-          <h3 className="font-mediium text-[30.68px] md:text-[40px] w-full leading-[45px] text-[#010910]">
-            Embedded content from other websites{" "}
-          </h3>
-          <p className="text-[16px] text-black leading-[28.8px] font-normal w-full">
-            Articles on this site may include embedded content (e.g. videos,
-            images, articles, etc.). Embedded content from other websites
-            behaves in the exact same way as if the visitor has visited the
-            other website.
-          </p>
-
-          <ul className="text-[16px] text-black leading-[28.8px] font-normal w-full list-decimal pl-12 md:pl-20 mt-[-9px]">
-            <li>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us.
-            </li>
-            <li>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us.
-            </li>
-            <li>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us.
-            </li>
-            <li>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us.
-            </li>
-            <li>
-              If you have an account on this site, or have left comments, you
-              can request to receive an exported file of the personal data we
-              hold about you, including any data you have provided to us.
-            </li>
-          </ul>
-        </div>
-      </section>
+      </div>
     </div>
   );
 };
