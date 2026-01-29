@@ -5,9 +5,9 @@ const Footer = () => {
     <div className="w-full bg-primary flex flex-col p-10 md:p-20 gap-10 md:px-[130px]">
       <div className="flex flex-col md:flex-row w-full items-center md:justify-between gap-5">
         <h3 className="text-white font-medium text-center md:text-left text-[22px] leading-[35.2px] md:w-[850px]">
-          Our highly skilled development teams specialized in Java, PHP, React,
-          Angular and AWS help you accelarate your business via modern custom
-          software solutions.
+          Trivona Limited - Your trusted source for general merchandise and
+          digital goods. We provide quality products and excellent service to
+          meet all your needs.
         </h3>
 
         <Link

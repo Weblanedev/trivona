@@ -64,12 +64,12 @@ const RefundReturnPage = () => {
               <li>
                 Contact our customer service team at{" "}
                 <a
-                  href="mailto:returns@trivona.com"
+                  href="mailto:Operations@trivonaltd.com"
                   className="text-primary hover:underline"
                 >
-                  returns@trivona.com
+                  Operations@trivonaltd.com
                 </a>{" "}
-                or call +234 800 000 0000 to initiate a return
+                or call 09096362217 to initiate a return
               </li>
               <li>Provide your order number and reason for return</li>
               <li>
@@ -183,14 +183,18 @@ const RefundReturnPage = () => {
               <li>
                 <strong>Email:</strong>{" "}
                 <a
-                  href="mailto:returns@trivona.com"
+                  href="mailto:Operations@trivonaltd.com"
                   className="text-primary hover:underline"
                 >
-                  returns@trivona.com
+                  Operations@trivonaltd.com
                 </a>
               </li>
               <li>
-                <strong>Phone:</strong> +234 800 000 0000
+                <strong>Phone:</strong> 09096362217
+              </li>
+              <li>
+                <strong>Address:</strong> 8 James Street, Oko Obi, Logun, Igbo
+                Olomu, Lagos State
               </li>
               <li>
                 <strong>Hours:</strong> Monday - Friday, 9AM - 6PM WAT
