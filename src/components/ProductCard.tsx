@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import type { Product } from "../types/product";
 import { useCartStore } from "../store/cartStore";
+import { formatPrice } from "../utils/currency";
 
 interface ProductCardProps {
   product: Product;
@@ -37,7 +38,7 @@ export function ProductCard({ product }: ProductCardProps) {
             {product.description}
           </p>
           <p className="font-bold text-lg text-primary mb-3">
-            ${product.price.toFixed(2)}
+            {formatPrice(product.price)}
           </p>
         </div>
       </Link>

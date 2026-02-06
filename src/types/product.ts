@@ -9,4 +9,9 @@ export interface Product {
   description: string;
   price: number;
   image: string;
+  authors?: string[];
+  categories?: string[];
+  publishedDate?: string;
+  pageCount?: number;
+  subtitle?: string;
 }

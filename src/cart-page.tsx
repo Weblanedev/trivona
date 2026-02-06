@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCartStore, type CartItem } from "./store/cartStore";
+import { formatPrice } from "./utils/currency";
 
 /**
  * Cart page: product list, quantity controls, subtotal and total.
@@ -62,7 +63,7 @@ export default function CartPage() {
                     {product.title}
                   </Link>
                   <p className="text-primary font-semibold mt-1">
-                    ${product.price.toFixed(2)}
+                    {formatPrice(product.price)}
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
@@ -105,16 +106,16 @@ export default function CartPage() {
               <div className="space-y-2 text-gray-600">
                 <div className="flex justify-between">
                   <span>Subtotal</span>
-                  <span>${subtotal.toFixed(2)}</span>
+                  <span>{formatPrice(subtotal)}</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Shipping</span>
-                  <span>${shipping.toFixed(2)}</span>
+                  <span>{formatPrice(shipping)}</span>
                 </div>
               </div>
               <div className="flex justify-between font-semibold text-gray-900 mt-4 pt-4 border-t border-gray-200">
                 <span>Total</span>
-                <span>${cartTotal.toFixed(2)}</span>
+                <span>{formatPrice(cartTotal)}</span>
               </div>
               <Link
                 to="/checkout"

@@ -11,6 +11,7 @@ import {
   isValidEmail,
   isValidPhone,
 } from "./utils/validation";
+import { formatPrice } from "./utils/currency";
 
 /**
  * Checkout form: delivery (full name, address, phone/email) and payment (UI only).
@@ -241,15 +242,15 @@ export default function CheckoutPage() {
           <section className="border-t border-gray-200 pt-6">
             <div className="flex justify-between text-gray-600 mb-2">
               <span>Subtotal</span>
-              <span>${subtotal.toFixed(2)}</span>
+              <span>{formatPrice(subtotal)}</span>
             </div>
             <div className="flex justify-between text-gray-600 mb-2">
               <span>Shipping</span>
-              <span>${shipping.toFixed(2)}</span>
+              <span>{formatPrice(shipping)}</span>
             </div>
             <div className="flex justify-between font-semibold text-gray-900 text-lg mt-4">
               <span>Total</span>
-              <span>${orderTotal.toFixed(2)}</span>
+              <span>{formatPrice(orderTotal)}</span>
             </div>
             <p className="text-gray-600 text-sm mt-4 text-center">
               Your personal data will be used to process your order, support
